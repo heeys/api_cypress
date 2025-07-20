@@ -1,0 +1,63 @@
+{
+  "validUsers": [
+    {
+      "name": "João Silva",
+      "email": "joao.silva@example.com"
+    },
+    {
+      "name": "Maria Santos",
+      "email": "maria.santos@example.com"
+    },
+    {
+      "name": "Pedro Oliveira",
+      "email": "pedro.oliveira@example.com"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "description": "Usuário sem nome",
+      "data": {
+        "email": "teste@example.com"
+      }
+    },
+    {
+      "description": "Usuário sem email",
+      "data": {
+        "name": "Teste"
+      }
+    },
+    {
+      "description": "Email inválido",
+      "data": {
+        "name": "Teste",
+        "email": "email-invalido"
+      }
+    },
+    {
+      "description": "Nome vazio",
+      "data": {
+        "name": "",
+        "email": "teste@example.com"
+      }
+    },
+    {
+      "description": "Email vazio",
+      "data": {
+        "name": "Teste",
+        "email": ""
+      }
+    }
+  ],
+  "updateData": [
+    {
+      "name": "Nome Atualizado",
+      "email": "email.atualizado@example.com"
+    },
+    {
+      "name": "Apenas Nome Atualizado"
+    },
+    {
+      "email": "apenas.email@example.com"
+    }
+  ]
+}

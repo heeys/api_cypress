@@ -1,0 +1,91 @@
+{
+  "validTickets": [
+    {
+      "description": "Sistema não está funcionando corretamente"
+    },
+    {
+      "description": "Erro ao fazer login na aplicação"
+    },
+    {
+      "description": "Problema com envio de emails"
+    },
+    {
+      "description": "Interface lenta para carregar"
+    }
+  ],
+  "invalidTickets": [
+    {
+      "description": "Ticket sem userId",
+      "data": {
+        "description": "Teste de ticket inválido"
+      }
+    },
+    {
+      "description": "Ticket sem descrição",
+      "data": {
+        "userId": 1
+      }
+    },
+    {
+      "description": "Descrição vazia",
+      "data": {
+        "userId": 1,
+        "description": ""
+      }
+    },
+    {
+      "description": "UserId inválido (string)",
+      "data": {
+        "userId": "invalid",
+        "description": "Teste"
+      }
+    },
+    {
+      "description": "UserId inexistente",
+      "data": {
+        "userId": 99999,
+        "description": "Teste"
+      }
+    }
+  ],
+  "statusUpdates": [
+    {
+      "status": "In Progress",
+      "description": "Atualizando para Em Progresso"
+    },
+    {
+      "status": "Closed",
+      "description": "Fechando ticket"
+    },
+    {
+      "status": "Pending",
+      "description": "Colocando em pendente"
+    },
+    {
+      "status": "Open",
+      "description": "Reabrindo ticket"
+    }
+  ],
+  "invalidStatuses": [
+    {
+      "status": "",
+      "description": "Status vazio"
+    },
+    {
+      "status": "Invalid Status",
+      "description": "Status inválido"
+    },
+    {
+      "status": "OPEN",
+      "description": "Status em maiúsculo"
+    },
+    {
+      "status": "closed",
+      "description": "Status em minúsculo"
+    },
+    {
+      "status": 123,
+      "description": "Status numérico"
+    }
+  ]
+}
